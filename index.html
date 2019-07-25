@@ -2,35 +2,15 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 <style>
-div> div:nth-child(1){
+  #employee-list > div {
+    border: solid 1px black;
+    display: flex;
+    border-radius: 5px;
+    width: calc((100% / 3) - 2rem);
+    margin-bottom: 1rem;
+    padding: .5rem;
 
-}
-div> div:nth-child(2){
-
-}
-div> div:nth-child(3){
-
-}
-div> div:nth-child(4){
-
-}
-div> div:nth-child(5){
-
-}
-div> div:nth-child(6){
-
-}
-div> div:nth-child(7){
-
-}
-div> div:nth-child(8){
-
-}
-
-
-
-
-
+  }
 </style>
   </head>
   <body>
@@ -38,14 +18,30 @@ div> div:nth-child(8){
     <h1 id='title'>Acme Employees DOM</h1>
     <div>Choose your three favorites employees.</div>
     <div id='employee-list'>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div>
+        <h1>Moe</h1>
+      </div>
+      <div>
+        <h1>Larry</h1>
+      </div>
+      <div>
+        <h1>Shep</h1>
+      </div>
+      <div>
+        <h1>Curly</h1>
+      </div>
+      <div>
+        <h1>Groucho</h1>
+      </div>
+      <div>
+        <h1>Harpo</h1>
+      </div>
+      <div>
+        <h1>Shep Jr.</h1>
+      </div>
+      <div>
+        <h1>Lucy</h1>
+      </div>
     </div>
     <div id='keys'>
       <div class='key'>
@@ -53,6 +49,7 @@ div> div:nth-child(8){
         <div class='swatch favorite'/>
       </div>
     </div>
+
       </div>
   <script>
     const employees = [
