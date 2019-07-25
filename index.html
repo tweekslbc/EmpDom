@@ -10,12 +10,13 @@
     width: calc((100% / 3) - 2rem);
     margin-bottom: 1rem;
     padding: .5rem;
+    background-color: lightcyan;
   }
   #employee-list {
      margin: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+
     justify-content: left;
 }
 </style>
@@ -25,28 +26,28 @@
     <h1 id='title'>Acme Employees DOM</h1>
     <div>Choose your three favorites employees.</div>
     <div id='employee-list'>
-      <div>
+      <div id="Moe">
         <h1>Moe</h1>
       </div>
-      <div>
+      <div id="Larry">
         <h1>Larry</h1>
       </div>
-      <div>
+      <div id="Shep">
         <h1>Shep</h1>
       </div>
-      <div>
+      <div id="Curly">
         <h1>Curly</h1>
       </div>
-      <div>
+      <div id="Groucho">
         <h1>Groucho</h1>
       </div>
-      <div>
+      <div id="Harpo">
         <h1>Harpo</h1>
       </div>
-      <div>
+      <div id="Shep Jr.">
         <h1>Shep Jr.</h1>
       </div>
-      <div>
+      <div id="Lucy">
         <h1>Lucy</h1>
       </div>
     </div>
@@ -60,7 +61,7 @@
       </div>
   <script>
     const employees = [
-    { id: 1, name: 'moe'},
+    { id: 1, name: 'Moe'},
     { id: 2, name: 'larry', managerId: 1},
     { id: 4, name: 'shep', managerId: 2},
     { id: 3, name: 'curly', managerId: 1},
@@ -69,6 +70,11 @@
     { id: 8, name: 'shep Jr.', managerId: 4},
     { id: 99, name: 'lucy', managerId: 1}
   ];
+  document.getElementById("Moe").addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("Moe").document.body.div = #ff0000;
+}
   </script>
   </body>
 </html>
