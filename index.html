@@ -1,51 +1,70 @@
 <html>
   <head>
-    <style>
-    div > div {
-        height:100px;
-        width:100px;
-        border: solid 10px black;
-      }
-      div > div:nth-child(1){
-        background-color: dodgerblue;
-        height: 100px;
-        width: 100%;
-      }
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+<style>
+div> div:nth-child(1){
 
-      div> div:nth-child(2){
-        background-color: white;
-        height: 100px;
-        width: 30%;
-      }
-      div> div:nth-child(3){
-        background-color: crimson;
-        display:flex;
-        height:300px;
-        width: 30%;
-      }
-      div> div:nth-child(4){
-        background-color: aqua;
-      }
-      div> div:nth-child(5){
-        background-color: aqua;
-      }
-      div> div:nth-child(6){
-        background-color: aqua;
-      }
+}
+div> div:nth-child(2){
+
+}
+div> div:nth-child(3){
+
+}
+div> div:nth-child(4){
+
+}
+div> div:nth-child(5){
+
+}
+div> div:nth-child(6){
+
+}
+div> div:nth-child(7){
+
+}
+div> div:nth-child(8){
+
+}
 
 
 
-      </style>
+
+
+</style>
   </head>
   <body>
-    <div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div id='container'>
+    <h1 id='title'>Acme Employees DOM</h1>
+    <div>Choose your three favorites employees.</div>
+    <div id='employee-list'>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
+    <div id='keys'>
+      <div class='key'>
+        Favorite:
+        <div class='swatch favorite'/>
+      </div>
+    </div>
+      </div>
+  <script>
+    const employees = [
+    { id: 1, name: 'moe'},
+    { id: 2, name: 'larry', managerId: 1},
+    { id: 4, name: 'shep', managerId: 2},
+    { id: 3, name: 'curly', managerId: 1},
+    { id: 5, name: 'groucho', managerId: 3},
+    { id: 6, name: 'harpo', managerId: 5},
+    { id: 8, name: 'shep Jr.', managerId: 4},
+    { id: 99, name: 'lucy', managerId: 1}
+  ];
+  </script>
   </body>
 </html>
